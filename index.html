@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHHH RICO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background-color: #c7c7c7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        @keyframes identifier {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            animation: identifier 2s linear infinite;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button>TOCAME NO TE VAS A ARREPENTIR</button>
+    </main>
+    <script>
+        document.getElementsByTagName("button")[0].addEventListener("click", function(){
+            var audio = new Audio("tiriri.mp3");
+            audio.play();
+            document.getElementsByTagName('main')[0].innerHTML = "<h1>UHC SUBNORMALES EL 28/1</h1> <img src='https://media.tenor.com/a1VADuLpJLQAAAAi/%E3%81%8A%E3%82%81%E3%81%A7%E3%81%A8%E3%81%86-%E3%81%8A%E7%A5%9D%E3%81%84.gif' alt='UHC SUBNORMALES EL 28/1'>"
+            document.getElementsByTagName('main')[0].style.flexDirection = "column";
+        });
+    </script>
+</body>
+</html>
